@@ -31,7 +31,8 @@ WHERE `floor` = 1
 ==========================================
 SELECT * 
 FROM ospiti
-WHERE SUBSTRING(`name`,1,1) = "E" ;
+WHERE SUBSTRING(`name`,1,1) = "E" 
+	OR SUBSTRING(`lastname`,1,1) = "E";  => aggiunto nel caso in cui la richiesta fosse stata anche sui cognomi.
 ==========================================
 
 ●    Selezionare tutti gli ospiti che abbiano meno di 30 anni
